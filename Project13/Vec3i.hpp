@@ -70,7 +70,7 @@ namespace cw {
 			return x + y + z;
 		}
 		//add typedef (2)
-		
+		//sssss
 	
 
 	typedef Vec3<int> Vec3i;
