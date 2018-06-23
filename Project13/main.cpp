@@ -22,7 +22,7 @@ void main() {
 	Vec3i v4(3, 1, 1);
 	Vec3i v5(2, 2, 2);
 
-	int collect = v1.mulVec(v2);
+	int collect = v1.dot(v2);
 	print(v1);
 	print(v2);
 	v1.add(v2);
@@ -31,9 +31,9 @@ void main() {
 	print(v1);
 	v1.devision(10);
 	print(v1);
-	int collect2 = v1.divVec(v3);
+	int collect2 = v1.dot(v3);
 	print(v1);
-	int collect3 = v4.mulVec(v5);
+	int collect3 = v4.cross(v5);
 	v4.add(v5);
 	printx(v4);
 
