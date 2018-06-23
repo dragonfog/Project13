@@ -111,6 +111,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Vec2i.cpp" />
+    <ClCompile Include="Vec3i.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Vec2i.hpp" />
+    <ClInclude Include="Vec3i.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
