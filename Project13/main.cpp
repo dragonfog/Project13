@@ -42,6 +42,7 @@ void main() {
 	printx(v5);
 	v3.mag();
 	print(v3);
+	//int collect6 = v1.arcc(v2);
 
 	std::cout << collect << std::endl;
 
@@ -52,6 +53,8 @@ void main() {
 	std::cout << collect3 << std::endl;
 
 	std::cout << collect5 << std::endl;
+
+	//std::cout << collect6 << std::endl;
 	getchar();
 
 

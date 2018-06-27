@@ -17,6 +17,7 @@ namespace cw {
 			fogiotype dot(Vec2<fogiotype> another);
 			fogiotype cross(Vec2<fogiotype> another);
 			void mag();
+			fogiotype arcc(Vec2<fogiotype> another);
 		};
 
 		template<class fogiotype>
@@ -81,6 +82,19 @@ namespace cw {
 			x = x/m;
 			y = y/m;
 		}
+
+		//template<class fogiotype>
+		//fogiotype Vec2<fogiotype>::arcc(Vec2<fogiotype> another) {
+			//fogiotype dot;
+			//fogiotype mag1;
+			//fogiotype mag2;
+			//dot = x.dot(y);
+			//mag1 = x.mag();
+			//mag2 = y.mag();
+			
+			//return std::acos(dot/(mag1*mag2));
+
+		//}
 
 		typedef Vec2<int> Vec2i;
 		typedef Vec2<float> Vec2f;
