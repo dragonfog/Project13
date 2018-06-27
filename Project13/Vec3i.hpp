@@ -21,6 +21,7 @@ namespace cw {
 		void devision(fogiotype t);
 		fogiotype dot(Vec3<fogiotype> another);
 		fogiotype cross(Vec3<fogiotype> another);
+		void mag();
 	};
 		//movefrom cpp to hpp (3)
 		template<class fogiotype>
@@ -68,6 +69,29 @@ namespace cw {
 			y *= another.y;
 			z *= another.z;
 			return x + y + z;
+		}
+
+		template<class fogiotype>
+		fogiotype Vec3<fogiotype>::cross(Vec3<fogiotype> another) {
+
+			x *= another.y;
+			y *= another.x;
+			z *= another.z;
+
+			return (x*y) - (y*z);
+
+
+
+		}
+
+		template<class fogiotype>
+		void Vec3<fogiotype>::mag() {
+			fogiotype m;
+			m = sqrt((x*x) + (y*y)+(z*z));
+
+			x = x / m;
+			y = y / m;
+			z = z / m;
 		}
 		//add typedef (2)
 		//sssss

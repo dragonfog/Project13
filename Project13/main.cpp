@@ -32,16 +32,26 @@ void main() {
 	v1.devision(10);
 	print(v1);
 	int collect2 = v1.dot(v3);
+	int collect4 = v1.cross(v3);
 	print(v1);
+	int collect5 = v4.dot(v5);
 	int collect3 = v4.cross(v5);
 	v4.add(v5);
 	printx(v4);
+	v5.mag();
+	printx(v5);
+	v3.mag();
+	print(v3);
 
 	std::cout << collect << std::endl;
 
 	std::cout << collect2 << std::endl;
 
+	std::cout << collect4 << std::endl;
+
 	std::cout << collect3 << std::endl;
+
+	std::cout << collect5 << std::endl;
 	getchar();
 
 

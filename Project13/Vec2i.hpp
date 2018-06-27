@@ -10,12 +10,13 @@ namespace cw {
 			~Vec2<fogiotype>();
 		
 			fogiotype x, y;
-			void print() const;
+			
 			void add(Vec2<fogiotype> other);
 			void mul(fogiotype s);
 			void devision(fogiotype t);
 			fogiotype dot(Vec2<fogiotype> another);
 			fogiotype cross(Vec2<fogiotype> another);
+			void mag();
 		};
 
 		template<class fogiotype>
@@ -65,12 +66,22 @@ namespace cw {
 
 			x *= another.y;
 			y *= another.x;
+			
 
 			return x - y;
 
 
 
 		}
+		template<class fogiotype>
+		void Vec2<fogiotype>::mag() {
+			fogiotype m;
+			m = sqrt((x*x) + (y*y));
+
+			x = x/m;
+			y = y/m;
+		}
+
 		typedef Vec2<int> Vec2i;
 		typedef Vec2<float> Vec2f;
 }
